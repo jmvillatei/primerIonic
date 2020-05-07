@@ -1,0 +1,9 @@
+{
+  "appId": "com.ionic.app",
+  "appName": "primerIonic",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {},
+  "linuxAndroidStudioPath": "/home/jmvillatei/Documentos/instaladores/andoridStudio/android-studio/bin/studio.sh"
+}

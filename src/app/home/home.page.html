@@ -1,7 +1,10 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/places"></ion-back-button>
+    </ion-buttons>
     <ion-title>
-      Blank
+      hola mundo
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +17,14 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-list>
+      <ion-card *ngFor="let photo of photos">
+        <img [src]="photo.url" >
+        <ion-card-content>
+          <p>{{photo.title}}</p>
+          <p>{{photo.id}}</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
   </div>
 </ion-content>
